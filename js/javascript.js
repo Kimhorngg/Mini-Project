@@ -23,7 +23,6 @@ closeSidebar.addEventListener("click", () => {
   overlay.classList.add("hidden");
 });
 
-
 // function menu() {
 //   const menubar = document.getElementById("navbar-menu");
 //   if (window.innerWidth <= 425) {
