@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+    name="description"
+    content="This website or this page is about selling glowing skincare product"
+    />
+    <meta property="og:title" content=" Glowing skincare product" />
+    <meta property="og:description" content="This website or this page is about selling glowing skincare product"/> 
+    <meta property="og:image" content="" />
+    <title>Home page</title>
+    <!-- link tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Flowbite cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- AOS CSS cdn -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- AOS JS cdn -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body class="m-0 dark:bg-gray-800">
+    <!-- header -->
+    <header id="header">
+      <nav
+        class="border-gray-200 dark:bg-gray-900"
+        style="background-color: #e6f2da"
+      >
+
+        <div
+          class=" m-auto flex flex-wrap items-center justify-between lg:pl-20 lg:p-3 lg:py-6"
+        >
+          <div
+            class="items-center w-full justify-between md:flex md:w-auto md:order-1"
+            id="navbar-search"
+          >
+
+            <ul
+              id="navbar-menu"
+              class="hidden md:hidden lg:flex flex-col p-4 md:p-0 mt-4 lg:w-full xl:w-full font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+              style="background-color: rgb(230, 242, 218)"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black underline bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black lg:dark:text-black"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-gray dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Collections</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black  md:dark:hover:text-gray dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="whitespace-nowrap block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black  md:dark:hover:text-gray dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About us</a
+                >
+              </li>
+            </ul>
+
+            <div>
+              <div class="flex w-full justify-between  p-4 lg:p-0">
+                <button id="navButton" class="lg:hidden sm:flex md:flex sm:m-5 ">
+                <i class="fa-solid fa-bars"></i></button>
+                <h2 class="text-6xl text-center sm:mx-[200px] md:mx-70 dark:text-black sm:text-4xl">Glowing</h2>
+
+                <div>
+
+                </div>
+              </div>
+            </div>
+               
+            <div id="iconContainer" class="hidden lg:flex lg:ml-[380px] items-center space-x-4 text-black">
+              <i class="fa-solid fa-magnifying-glass text-xl px-2"></i>
+              <i class="fa-solid fa-user text-xl px-2"></i>
+              <i class="fa-solid fa-star text-xl px-2"></i>
+              <i class="fa-solid fa-bag-shopping text-xl  px-2"></i>
+             
+            </div>
+            
+
+          </div>
+        </div>
+                  <!-- Sidebar Menu (only for mobile & tablet) -->
+              
+          <div
+          id="sidebar"
+          class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg"
+          >
+          <!-- Header with Close Button -->
+          <div class="flex items-center justify-between p-4 border-b border-gray-300">
+            <h2 class="text-4xl text-gray-800">Glowing</h2>
+            <button id="closeSidebar" class="text-2xl text-gray-700 hover:text-gray-900">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Sidebar Links -->
+          <!-- <ul class="p-6 space-y-6">
+            <li><a href="#" class="text-lg font-medium text-gray-800 dark:text-black">Home</a></li>
+            <li><a href="#" class="text-lg font-medium text-gray-800">Shop</a></li>
+            <li><a href="#" class="text-lg font-medium text-gray-800">Collections</a></li>
+            <li><a href="#" class="text-lg font-medium text-gray-800">Blog</a></li>
+            <li><a href="#" class="text-lg font-medium text-gray-800">About Us</a></li>
+          </ul>
+          </div> -->
+
+    <!-- Sidebar Links -->
+    <ul class="p-6 space-y-6 " >
+      <li><a href="#" class="text-lg font-medium text-gray-800">Home</a></li>
+      <li><a href="#" class="text-lg font-medium text-gray-800">Shop</a></li>
+      <li><a href="#" class="text-lg font-medium text-gray-800">Collections</a></li>
+      <li><a href="#" class="text-lg font-medium text-gray-800">Blog</a></li>
+      <li><a href="#" class="text-lg font-medium text-gray-800">About Us</a></li>
+    </ul>
+
+        <!-- overlay -->
+        <div
+          id="overlay"
+          class="fixed inset-0 sbackdrop-blur-[1px] hidden z-40 lg:hidden"
+        ></div>
+
+
+
+      </nav>
+    </header>
+
+    <!-- main contain -->
+    <main class="dark:bg-gray-800">
+      <section id="#section1">
+        <div
+          href="#"
+          class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-full dark:border-gray-700 dark:bg-gray-800"
+        >
+          <!-- image -->
+          <img
+            class="object-cover rounded-t-lg md:w-[1200px] md:h-[870px] md:rounded-none md:rounded-s-lg"
+            src="./img/glowing.png"
+            alt="glowing image"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+          />
+          <!-- text -->
+          <div class="flex flex-col justify-between md:px-50 sm:mt-10 leading-normal h-full" id="icon">
+            <h5
+              class=" text-xs mt-10 tracking-tight text-gray-900 dark:text-white sm:mt-0 "
+              data-aos="zoom-out"
+              data-aos-duration="1000"
+              data-aos-offset="500"
+              data-aos-delay="50"
+            >
+              Essential Items
+            </h5>
+            <div
+              class="font-medium text-5xl text-4xl sm:text-5xl"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="500"
+              data-aos-delay="50"
+            >
+              <p class="my-10 sm:my-5 dark:text-gray-50">Let’s Introduce</p>
+              <p class="my-10 sm:my-5 dark:text-gray-50">Skin with The</p>
+              <p class="my-10 sm:my-5 dark:text-gray-50">Shine</p>
+            </div>
+            <p
+              class="mb-3 mt-1 font-normal text-gray-700 dark:text-gray-400"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              Mode using clean, non-toxic ingredients,
+              <br />
+              our products are designed for everyone.
+            </p>
+            <!-- button -->
+            <button
+              type="button"
+              data-aos="fade-up"
+              data-aos-delay="500"
+              data-aos-duration="10000"
+              style="background-color: #f7f0b6"
+              class="text-black mt-4 sm:mt-0 bg-blue-700 hover:bg-blue-800 focus:ring-4 md:w-[164px] font-extralight focus:ring-blue-300 rounded-[25px] text-sm px-2 py-5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+            >
+              SHOP THIS LOOK
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section2"
+        class="md:mx-[80px] md:mt-14 dark:bg-gray-800  "
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="500"
+        data-aos-delay="50"
+      >
+        <!-- title section 2 -->
+        <div id="title" class="text-5xl mt-10 mx-20 sm:mt-20 sm:mx-auto dark:text-gray-50">Our Picks for you</div>
+        <!-- contents of section 2 -->
+        <div
+          class="grid sm:grid-cols-3 md:grid-cols-3 xl:grid-cols-6  md:mt-14 sm:gap-1 md:gap-8 "
+        >
+          <!-- grid-1 -->
+          <div
+            class="w-full bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700 0"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="md:w-[150px] md:h-[150px] sm:mx-auto mb-3 mt-10 lg:mt-0 md:mt-0 rounded-full shadow-lg"
+                src="./img/moisturizer.png"
+                alt="moisturizer image"
+              />
+              <h5
+                class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+              >
+                Moisturizer
+              </h5>
+            </div>
+          </div>
+      
+
+          <!-- grid-2 -->
+          <div
+            class=" w-full bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="md:w-[150px] md:h-[150px] mb-3 rounded-full shadow-lg"
+                src="./img/serum.png"
+                alt="serum image"
+              />
+              <h5
+                class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+              >
+                Serum
+              </h5>
+            </div>
+          </div>
+
+          <!-- grid-3 -->
+          <div
+            class="w-full bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="md:w-[150px] md:h-[150px] mb-3 rounded-full shadow-lg"
+                src="./img/toner.png"
+                alt="toner image"
+              />
+              <h5
+                class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+              >
+                Toner
+              </h5>
+            </div>
+          </div>
+
+          <!-- grid-4 -->
+          <div
+            class="w-full bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="md:w-[150px] md:h-[150px] mb-3 rounded-full shadow-lg"
+                src="./img/cream.png"
+                alt="cream image"
+              />
+              <h5
+                class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+              >
+                Cream
+              </h5>
+            </div>
+          </div>
+
+          <!-- grid-5 -->
+          <div
+            class="w-full bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="md:w-[150px] md:h-[150px] mb-3 rounded-full shadow-lg"
+                src="./img/milky-cream.png"
+                alt="milky cream image"
+              />
+              <h5
+                class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+              >
+                Moisturizer
+              </h5>
+            </div>
+          </div>
+
+          <!-- grid-6-->
+          <div
+            class="w-full  bg-white rounded-lg dark:bg-gray-800 dark:border-gray-700"
+          >
+            <div class="flex flex-col items-center pb-10">
+              <img
+                class="md:w-[150px] md:h-[150px] mb-3 rounded-full shadow-lg"
+                src="./img/oil-cleanser.png"
+                alt="oil-cleanser image"
+              />
+              <h5
+                class="mb-1 text-xl font-medium text-gray-900 dark:text-white"
+              >
+                Oil Cleanser
+              </h5>
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <section
+        id="#section3"
+        class="md:mx-[80px] md:mt-14 object-cover"  data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="500"
+        data-aos-delay="50"
+       
+        
+      >
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 sm:grid-cols-1 md:grid-cols-3">
+          <div >
+            <img src="./img/customer-fav.png" alt="customer favorite image" />
+          </div>
+          <div>
+            <img src="./img/buy1get1.png" alt="buy one get one image" />
+          </div>
+          <div>
+            <img src="./img/discount.png" alt="discount twenty percent image" />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section4"
+        class="md:mx-[80px] mt-20  sm:mt-15 md:mt-20 object-cover"  data-aos="fade-up"
+        data-aos-duration="2000"
+        data-aos-offset="500"
+        data-aos-delay="50"
+        
+      >
+        <div class="grid lg:grid-cols-3 md:grid-cols-3 sm:cols-2 gap-10">
+          <div class="grid-cols-1">
+            <div class="flex justify-center">
+              <img src="./img/organic-product.png" alt="organic-product" />
+            </div>
+
+            <div class="text-center dark:text-gray-50">
+              <h2 class="text-xl">Guaranteed PURE</h2>
+              <p class="mt-3 text-sm">
+                All Grace formulations adhere to strict purity standards and
+                <br />
+                will never contain harsh or toxic ingredients
+              </p>
+            </div>
+          </div>
+          <div class="grid-cols-1">
+            <div class="flex justify-center">
+              <img
+                src="./img/cruelty-free.png"
+                alt="cruelty free image"
+                class="w-[290px]"
+              />
+            </div>
+
+            <div class="text-center dark:text-gray-50">
+              <h2 class="text-xl">Completely Cruelty-Free</h2>
+              <p class="mt-3 text-sm">
+                Bloom skincare products are made with safe, high-quality <br />
+                ingredients and never include harsh or toxic chemicals
+              </p>
+            </div>
+          </div>
+          <div class="grid-cols-1">
+            <div class="flex justify-center">
+              <img
+                src="./img/period-of-product.png"
+                alt="period of product image"
+                class="w-[240px]"
+              />
+            </div>
+            <div class="text-center dark:text-gray-50">
+              <h2 class="text-xl">Ingredient Sourcing</h2>
+              <p class="mt-3 text-sm">
+                Our ingredients are carefully sourced from trusted <br />
+                suppliers to ensure the highest quality and purity in every
+                <br />
+                product
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section5"
+        class="lg:ml-[80px] mt-[100px]" 
+        
+      >
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20">
+          <div>
+            <div class="lg:mt-[190px] md:mt-[10px]">
+              <div class="flex gap-2 ml-10 sm:ml-10 md:ml-16 lg:ml-16 dark:text-gray-50" data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="500"
+             >
+                <p
+                  class="font-bold mt-1 "
+
+                >
+                  SPECIAL OFFER
+                </p>
+                <button
+                 
+                  type="button"
+                  style="background-color: #98cb71"
+                  class="text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-3 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                >
+                  -30%
+                </button>
+              </div>
+              <p
+                class="dark:text-gray-50 text-5xl md:text-4xl font-medium mt-5  ml-10 sm:ml-10 md:ml-16 lg:ml-16 "  data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="500"
+               
+              >
+                Save on Sets
+              </p>
+              <p
+                class="mt-5 ml-10 sm:ml-10 md:ml-16 lg:ml-16 text-wrap dark:text-gray-50"  data-aos="fade-right"
+                data-aos-duration="2000"
+                data-aos-offset="500"
+               
+              >
+                Don't miss out on limited-time discounts! Shop now and save on
+                
+                high quality skincare and beauty essentials before the offer
+                ends.
+              </p>
+              <button  data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="500"
+                style="background-color: #f7f0b6"
+                type="button"
+                class="py-2.5 md:ml-15 mt-5 px-5 me-2 mb-2 text-sm  ml-10 sm:ml-10 md:ml-16 lg:ml-16 font-bold text-black focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100  focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:text-gray-50 dark:text-gray-400 dark:border-gray-600 dark:hover:text-black dark:hover:bg-gray-700"
+              >
+                Get only $30.00
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="grid-cols-1"  data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-offset="500"
+          >
+            <img
+              src="./img/set-glowing.png"
+              class="w-full"
+              alt="Glowing set image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section6"
+        class="mx-[80px] sm:mx-[30px] mt-20"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-offset="500"
+        data-aos-delay="200"
+       
+        
+      >
+      <div class="grid">
+        <div class="flex flex-col sm:flex-row sm:mx-[50px] justify-between dark:text-gray-50">
+          <p class="text-5xl " data-aos="fade-right"
+          data-aos-duration="2000"
+          data-aos-offset="500"
+          data-aos-delay="200">
+            Our Bestsellers
+          </p>
+          <p class="underline underline-offset-2 mt-5  font-bold dark:text-gray-50" data-aos="fade-left"
+          data-aos-duration="2000"
+          data-aos-offset="500"
+          data-aos-delay="200">
+            SHOP ALL PRODUCT
+          </p>
+        </div>
+      </div>
+      
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-20 md:gap-10 md:mx-[30px] md:mt-18">
+            <div class="text-center">
+              <div class="flex justify-center">
+                <img src="./img/Shield Spray.png" class="w-[300px]" alt="Shield Spray" />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">$37.00 <br />Shield Spray</p>
+            </div>
+            <div class=" text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Scalp Moisturizing Cream.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Scalp Moisturizing Cream image"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">
+                $29.00 <br />Scalp Moisturizing Cream
+              </p>
+            </div>
+            <div class=" text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Shield Conditioner.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Shield Conditioner"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">$27.00 <br />Shield Conditioner</p>
+            </div>
+            <div class=" text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Shield Shampoo.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Shield Shampoo image"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">5.00 <br />Shield Shampoo</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section7"
+        class="mx-[80px]  sm:mx-[30px]  mt-20"
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        data-aos-offset="500"
+        data-aos-delay="50"
+       
+       
+      >
+        <div class="grid ">
+          <div class="flex flex-col sm:flex-row sm:mx-[50px] justify-between">
+            <p
+              class="text-5xl dark:text-gray-50"   data-aos="fade-right"
+              data-aos-duration="2000"
+              data-aos-offset="500"
+              data-aos-delay="200"
+             
+            >
+              Under $25
+            </p>
+            <pc
+              class="underline underline-offset-2 mt-5 font-bold dark:text-gray-50" data-aos="fade-left"
+              data-aos-duration="2000"
+              data-aos-offset="500"
+              data-aos-delay="200"
+              >SHOP ALL PRODUCT</pc
+            >
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-20 md:gap-10 md:mx-[30px] md:mt-18">
+            <div class="grid-cols-1 text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Natural Coconut Cleansing Oil.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Cleaing Oil image"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">
+                $21.00 <br />Natural Coconut Cleansing Oil
+              </p>
+            </div>
+            <div class="grid-cols-1 text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Nourishing Eye Cream.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Nourishing EyeCream image"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">$17.00 <br />Nourishing Eye Cream</p>
+            </div>
+            <div class="grid-cols-1 text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Sideway Travel Case Set.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Sideway Travel Case Set"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">$8.00 <br />Sideway Travel Case Set</p>
+            </div>
+            <div class="grid-cols-1 text-center">
+              <div class="flex justify-center">
+                <img
+                  src="./img/Vaulted Mirror.png"
+                  class="flex justify-center w-[300px]"
+                  alt="Sideway Travel Case Set"
+                />
+              </div>
+              <p class="font-bold mt-5 dark:text-gray-50">5.00 <br />Vaulted Mirror image</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section8"
+        class="mt-25 p-20"
+        style="background-color: #e6f2da"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="500"
+        data-aos-offset="500"
+        data-aos-delay="50"
+      >
+        <p class="text-center text-5xl">As seen in</p>
+        <div class=" grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-20">
+          <div class="grid-cols-1">
+            <div class="flex justify-center">
+              <img
+                src="./img/parker co.png"
+                alt="logo"
+                class="w-[200px] mt-10"
+              />
+            </div>
+            <p class="text-center mt-5">
+              “ Also the customer service is phenomenal. I <br />
+              would purchase again.”
+            </p>
+          </div>
+          <div class="grid-cols-1">
+            <div class="flex justify-center">
+              <img
+                src="./img/hayden logo.png"
+                alt="logo"
+                class="w-[200px] mt-10"
+              />
+            </div>
+            <p class="text-center mt-9">
+              “Great product line. Very attentive staff to <br />
+              deal with.”
+            </p>
+          </div>
+          <div class="grid-cols-1">
+            <div class="flex justify-center">
+              <img
+                src="./img/Good mood.png"
+                alt="logo"
+                class="w-[170px] mt-10"
+              />
+            </div>
+            <p class="text-center mt-2">
+              “Are you looking to upgrade your beauty at <br />
+              an affordable price? Look no further than <br />
+              e.Space”
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="#section9"
+        class="mt-18 py-10 mx-[80px]"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="2000"
+      >
+        <p class="text-5xl text-center dark:text-gray-50">More to Discover</p>
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-20 mt-20">
+          <div class="grid-cols-1">
+            <img src="./img/shop.png" alt="shop image"/>
+            <div class="text-center mt-5">
+              <p class="text-2xl dark:text-gray-50">Find a Store</p>
+              <p class="underline underline-offset-2 font-bold mt-2 dark:text-gray-50">
+                OUR STORE
+              </p>
+            </div>
+          </div>
+          <div class="grid-cols-1">
+            <img src="./img/glowing-product.png" alt="glowing product image" />
+            <div class="text-center mt-5">
+              <p class="text-2xl mt-2 dark:text-gray-50">From our blog</p>
+              <p class="underline underline-offset-2 font-bold mt-2 dark:text-gray-50">
+                Read More
+              </p>
+            </div>
+          </div>
+          <div class="grid-cols-1">
+            <img src="./img/staff.png" alt="staff image" />
+            <div class="text-center mt-5">
+              <p class="text-2xl mt-2 dark:text-gray-50">Our story</p>
+              <p class="underline underline-offset-2 font-bold mt-2 dark:text-gray-50">
+                View More
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <footer
+      class="mt-20 p-25"
+      style="background-color: #fcf8f8"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+    >
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 sm:grid-rows-3">
+        <div class=" mx-auto col-span-2  sm:grid-cols-1 md:grid-cols-2 md:mx-auto lg:grid-cols-4">
+          <p class="text-4xl lg:text-4xl">Care for Your Skin,</p>
+          <p class="text-4xl lg:text-4xl mt-5">Care for Your Beauty</p>
+          <p class="mt-7">
+            Give your inbox some love with new products, tips, & more.
+          </p>
+          <button
+            type="button"
+            class="flex justify-between mt-8 w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+          >
+            Enter your email address <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <p class="mt-38 md:hidden">© Glowing 2025 | Powered by Shopify</p>
+        </div>
+        <div class="col-span-1 md:mt-20 md:mx-auto">
+          <p class="font-bold">About Us</p>
+          <p class="underline underline-offset-2 mt-5">About Glowing</p>
+          <p class="underline underline-offset-2 mt-5">Careers</p>
+          <p class="underline underline-offset-2 mt-5">Store Location</p>
+          <p class="underline underline-offset-2 mt-5">Our Blog</p>
+          <p class="underline underline-offset-2 mt-5">Reviews</p>
+          <p class="text-6xl mt-30 md:mt-20">Glowing</p>
+        </div>
+        <div class="  col-span-1 md:mt-20 md:mx-auto">
+          <p class="font-bold ">Information</p>
+          <p class="underline underline-offset-2 mt-5">Start a Return</p>
+          <p class="underline underline-offset-2 mt-5">Contact Us</p>
+          <p class="underline underline-offset-2 mt-5">Shipping FAQ</p>
+          <p class="underline underline-offset-2 mt-5">Term & Condition</p>
+          <p class="underline underline-offset-2 mt-5">Privacy Policy</p>
+          <div class="flex">
+            <p class="mt-30 md:mt-25 text-2xl"><i class="fa-brands fa-instagram"></i></p>
+            <p class="mt-30 md:mt-25 mx-5 text-2xl">
+              <i class="fa-brands fa-facebook"></i>
+            </p>
+            <p class="mt-30 md:mt-25 mx-1 text-2xl">
+              <i class="fa-brands fa-youtube"></i>
+            </p>
+            <p class="mt-30 md:mt-25 mx-4 text-2xl">
+              <i class="fa-brands fa-twitter"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer> -->
+
+   
+<footer 
+class="mt-20" 
+style="background-color: #fcf8f8"
+>
+<div class="py-16 mx-[75px] sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 gap-y-10 
+                md:grid-cols-4 md:grid-rows-2 md:gap-x-12 
+                lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-10"> 
+        
+        <div class="md:col-span-4 lg:col-span-1"> 
+            <p class="text-4xl">Care for Your Skin,</p>
+            <p class="text-4xl mt-5">Care for Your Beauty</p>
+            <p class="mt-7">Give your inbox some love with new products, tips, & more.</p>
+            <button
+                type="button"
+                class="flex justify-between mt-8 w-full sm:w-1/2 md:w-1/3 lg:w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-purple-900"
+            >
+                Enter your email address <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1 mt-10 md:mt-0"> 
+            <p class="font-bold">About Us</p>
+            <p class="mt-5">About Glowing</p>
+            <p class="mt-5">Careers</p>
+            <p class="mt-5">Store Location</p>
+            <p class="mt-5">Our Blog</p>
+            <p class="mt-5">Reviews</p>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1 mt-10 md:mt-0">
+            <p class="font-bold">Information</p>
+            <p class="mt-5">Start a Return</p>
+            <p class="mt-5">Contact Us</p>
+            <p class="mt-5">Shipping FAQ</p>
+            <p class="mt-5">Term & Condition</p>
+            <p class="mt-5">Privacy Policy</p>
+        </div>
+        
+    </div>
+
+    <hr class="mt-20 pt-8 border-gray-200">
+    
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-gray-500 order-3 md:order-1 mt-5 md:mt-0">
+            © Glowing 2025 | Powered by Shopify
+        </p>
+        
+        <div class="flex space-x-5 order-2">
+            <i class="fa-brands fa-instagram text-xl"></i>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-youtube text-xl"></i>
+            <i class="fa-brands fa-twitter text-xl"></i>
+        </div>
+        
+        <p class="text-5xl order-1 md:order-3">Glowing</p>
+    </div>
+    
+</div>
+</footer>
+
+    <!-- Initialize AOS init -->
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/javascript.js"></script>
+  </body>
+</html>
