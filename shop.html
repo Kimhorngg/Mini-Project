@@ -10,10 +10,9 @@
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-<body>
+<body class="dark:bg-gray-800 ">
     <!-- header -->
-   <!-- header -->
-    <header>
+    <header id="header">
       <nav
         class="border-gray-200 dark:bg-gray-900"
         style="background-color: #e6f2da"
@@ -35,7 +34,7 @@
               <li>
                 <a
                   href="index.html"
-                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"  
+                  class="block py-2 px-3 text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black lg:dark:text-black"
                   aria-current="page"
                   >Home</a
                 >
@@ -43,29 +42,29 @@
               <li>
                 <a
                   href="shop.html"
-                 class="block py-2 px-3 text-black underline bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black" 
+                  class="block py-2 px-3 text-gray-900 rounded-sm underline hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-gray dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Shop</a
                 >
               </li>
               <li>
                 <a
                   href="collection.html"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-black md:dark:hover:text-gray-700 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Collections</a
                 >
               </li>
               <li>
                 <a
                   href="blog.html"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-black  md:dark:hover:text-gray dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Blog</a
                 >
               </li>
               <li>
                 <a
                   href="about-us.html"
-                  class="whitespace-nowrap block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                  >About us</a
+                  class="whitespace-nowrap block  py-2 px-30  text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-black  md:dark:hover:text-gray dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  >About us </a
                 >
               </li>
             </ul>
@@ -74,7 +73,7 @@
               <div class="flex w-full justify-between  p-4 lg:p-0">
                 <button id="navButton" class="lg:hidden sm:flex md:flex sm:m-5 ">
                 <i class="fa-solid fa-bars"></i></button>
-                <h2 class="text-6xl text-center sm:mx-[200px] md:mx-70  sm:text-4xl">Glowing</h2>
+                <h2 style="font-size: 2.5rem;" class="text-6xl text-center lg:ml-[280px] sm:mx-[200px] md:mx-70 dark:text-black sm:text-4xl">Glowing</h2>
 
                 <div>
 
@@ -82,47 +81,53 @@
               </div>
             </div>
                
-            <div id="icon" class="text-black hidden lg:flex lg:ml-[380px]">
-              <i class="fa-solid fa-magnifying-glass px-4"></i>
-              <i class="fa-solid fa-user px-4"></i>
-              <i class="fa-solid fa-star px-4"></i>
-              <i class="fa-solid fa-bag-shopping px-4"></i>
+            <div id="iconContainer" class="hidden lg:flex lg:ml-[380px] items-center space-x-4 text-black">
+              <i class="fa-solid fa-magnifying-glass text-xl px-2"></i>
+              <i class="fa-solid fa-user text-xl px-2"></i>
+              <i class="fa-solid fa-star text-xl px-2"></i>
+              <i class="fa-solid fa-bag-shopping text-xl  px-2"></i>
+             
             </div>
             
 
           </div>
         </div>
-        <!-- Sidebar Menu (only for mobile & tablet) -->
-        <!-- Sidebar Menu (only for mobile & tablet) -->
-        <div
-            id="sidebar"
-            class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg"
-            >
-            <!-- Header with Close Button -->
-            <div class="flex items-center justify-between p-4 border-b border-gray-300">
+                  <!-- Sidebar Menu (only for mobile & tablet) -->
+              
+          <div
+          id="sidebar"
+          class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50 lg:hidden shadow-lg"
+          >
+          <!-- Header with Close Button -->
+          <div class="flex items-center justify-between p-4 border-b border-gray-300">
             <h2 class="text-4xl text-gray-800">Glowing</h2>
             <button id="closeSidebar" class="text-2xl text-gray-700 hover:text-gray-900">
-                <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-xmark"></i>
             </button>
-            </div>
+          </div>
 
-            <!-- Sidebar Links -->
-            <ul class="p-6 space-y-6">
-            <li><a href="index.html" class="text-lg font-medium text-gray-800">Home</a></li>
-            <li><a href="shop.html" class="text-lg font-medium text-gray-800">Shop</a></li>
-            <li><a href="collection.html" class="text-lg font-medium text-gray-800">Collections</a></li>
-            <li><a href="blog.html" class="text-lg font-medium text-gray-800">Blog</a></li>
-            <li><a href="about-us.html" class="text-lg font-medium text-gray-800">About Us</a></li>
-            </ul>
-        </div>
+  
+
+    <!-- Sidebar Links -->
+    <ul class="p-6 space-y-6 " >
+      <li><a href="index.html" class="text-lg font-medium text-gray-800">Home</a></li>
+      <li><a href="shop.html" class="text-lg font-medium text-gray-800">Shop</a></li>
+      <li><a href="collection.html" class="text-lg font-medium text-gray-800">Collections</a></li>
+      <li><a href="blog.html" class="text-lg font-medium text-gray-800">Blog</a></li>
+      <li><a href="about-us.html" class="text-lg font-medium text-gray-800">About Us</a></li>
+    </ul>
 
         <!-- overlay -->
         <div
           id="overlay"
-          class="fixed inset-0 backdrop-blur-[1px] hidden z-40 lg:hidden"
+          class="fixed inset-0 sbackdrop-blur-[1px] hidden z-40 lg:hidden"
         ></div>
+
+
+
       </nav>
     </header>
+
 
  
 
@@ -146,34 +151,34 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-06-1.jpg?v=1740035110" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$27.00</p>
-          <h3 class="text-[18px] md:text-[20px]">Enriched Duo</h3>
+          <h3 class="text-[18px] md:text-[20px] dark:text-white">Enriched Duo</h3>
         </div>
       </div>
       <div data-aos="fade-up" data-aos-delay="100" class="w-full sm:w-[260px] md:w-[280px] lg:w-[300px] h-[540px] hover:scale-105 transition-transform duration-300">
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-03-3.jpg?v=1740035064" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$23.00</p>
-          <h3 class="text-[18px] md:text-[20px]">Enriched Hannd & Body wash</h3>
+          <h3 class="text-[18px] md:text-[20px] dark:text-white">Enriched Hannd & Body wash</h3>
         </div>
       </div>
 <div data-aos="fade-up" data-aos-delay="100" class="w-full sm:w-[260px] md:w-[280px] lg:w-[300px] h-[540px] hover:scale-105 transition-transform duration-300">
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-05-1.jpg?v=1740035070" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$45.00</p>
-          <h3 class="text-[18px] md:text-[20px]">Enriched Hand wash</h3>
+          <h3 class="text-[18px] md:text-[20px] dark:text-white">Enriched Hand wash</h3>
         </div>
       </div>
 <div data-aos="fade-up" data-aos-delay="100" class="w-full sm:w-[260px] md:w-[280px] lg:w-[300px] h-[540px] hover:scale-105 transition-transform duration-300">
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-10-1.jpg?v=1740035115" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$55.00</p>
           <h3 class="text-[18px] md:text-[20px]">Moisturizing Polishing Treatment</h3>
         </div>
@@ -186,7 +191,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-12-1.jpg?v=1740035136" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$21.00</p>
           <h3 class="text-[18px] md:text-[20px]">Natural Coconut Cleansing Oil</h3>
         </div>
@@ -195,7 +200,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-08-1.jpg?v=1740035130" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$23.00</p>
           <h3 class="text-[18px] md:text-[20px]">Nourishing Eye Cream</h3>
         </div>
@@ -204,7 +209,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-09-1.jpg?v=1740035093" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$35.00</p>
           <h3 class="text-[18px] md:text-[20px]">Nourishing Moisture Mask</h3>
         </div>
@@ -213,7 +218,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-02-1.jpg?v=1740035075" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$15.00</p>
           <h3 class="text-[18px] md:text-[20px]">Perfecting Facial Oil</h3>
         </div>
@@ -226,7 +231,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-11-1.jpg?v=1740035104 alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$70.00</p>
           <h3 class="text-[18px] md:text-[20px]">Shield Shampoo</h3>
         </div>
@@ -235,7 +240,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-01-2.jpg?v=1740035059" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$29.00</p>
           <h3 class="text-[18px] md:text-[20px]">Scalp Moisturizing Cream </h3>
         </div>
@@ -244,7 +249,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-04-3.jpg?v=1740035125" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$27.00</p>
           <h3 class="text-[18px] md:text-[20px]">Shield Conditioner</h3>
         </div>
@@ -253,7 +258,7 @@
         <div class="w-full h-[400px] bg-gray-100 rounded-2xl overflow-hidden shadow-md">
           <img class="w-full h-full object-cover" src="https://glowing-demo3.myshopify.com/cdn/shop/files/product-07-1.jpg?v=1740035088" alt="">
         </div>
-        <div class="text-center mt-3">
+        <div class="text-center mt-3 dark:text-white">
           <p class="text-[22px] font-bold">$37.00</p>
           <h3 class="text-[18px] md:text-[20px]">Shield Spray</h3>
         </div>
@@ -266,81 +271,75 @@
             <!-- ========== PAGINATION ========== -->
   <section class="flex items-center justify-center gap-4 m-6">
    
-    <button class="w-8 h-8 rounded-full bg-yellow-200 text-black font-medium transition">1</button>
-    <button class="w-8 h-8 rounded-full  hover:bg-gray-100 text-black hover:bg-yellow-200 font-medium transition"><a href="./page-shop-2.html">2</a></button>
+    <button class="w-8 h-8 rounded-full bg-yellow-200 text-black font-medium transition dark:text-white">1</button>
+    <button class="w-8 h-8 rounded-full  hover:bg-gray-100 text-black hover:bg-yellow-200 font-medium transition dark:text-white"><a href="./page-shop-2.html">2</a></button>
      <button class="text-lg rounded-full font-semibold hover:text-yellow-600 hover:bg-yellow-200 transition px-4 py-2">
-        <a href="./page-shop-2.html"> >> </a>
+        <a href="./page-shop-2.html " class="dark:text-white"> >> </a>
     </button>
   </section>
     </main>
-    <footer class="bg-gray-100 mt-10">
-  <section class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row flex-wrap justify-between gap-10">
-    <!-- Left -->
-    <div class="md:w-[40%]">
-      <h2 class="text-2xl md:text-3xl font-semibold mb-4">
-        Care for Your Skin,<br>Care for Your Beauty
-      </h2>
-      <p class="text-sm text-gray-500 mb-6">
-        Give your inbox some love with new products, tips, & more.
-      </p>
-      <div class="flex items-center bg-white rounded-md overflow-hidden w-full border border-gray-300">
-        <input
-          type="email"
-          placeholder="Enter your email address"
-          class="flex-1 bg-transparent px-4 py-3 text-sm focus:outline-none"
-        />
-        <button class="px-4 text-gray-600 hover:text-black">→</button>
-      </div>
+    <!-- footer -->
+  
+<footer 
+class="mt-20" 
+style="background-color: #fcf8f8"
+>
+<div class="py-16 mx-[75px] sm:px-6 lg:px-8">
+    
+    <div class="grid grid-cols-1 gap-y-10 
+                md:grid-cols-4 md:grid-rows-2 md:gap-x-12 
+                lg:grid-cols-3 lg:grid-rows-1 lg:gap-x-10"> 
+        
+        <div class="md:col-span-4 lg:col-span-1"> 
+            <p class="text-4xl">Care for Your Skin,</p>
+            <p class="text-4xl mt-5">Care for Your Beauty</p>
+            <p class="mt-7">Give your inbox some love with new products, tips, & more.</p>
+            <button
+                type="button"
+                class="flex justify-between mt-8 w-full sm:w-1/2 md:w-1/3 lg:w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-purple-900"
+            >
+                Enter your email address <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1 mt-10 md:mt-0"> 
+            <p class="font-bold">About Us</p>
+            <p class="mt-5">About Glowing</p>
+            <p class="mt-5">Careers</p>
+            <p class="mt-5">Store Location</p>
+            <p class="mt-5">Our Blog</p>
+            <p class="mt-5">Reviews</p>
+        </div>
+
+        <div class="md:col-span-2 lg:col-span-1 mt-10 md:mt-0">
+            <p class="font-bold">Information</p>
+            <p class="mt-5">Start a Return</p>
+            <p class="mt-5">Contact Us</p>
+            <p class="mt-5">Shipping FAQ</p>
+            <p class="mt-5">Term & Condition</p>
+            <p class="mt-5">Privacy Policy</p>
+        </div>
+        
     </div>
 
-    <!-- About Us -->
-    <div class="md:w-[25%]">
-      <h3 class="text-lg font-semibold mb-4">About Us</h3>
-      <ul class="space-y-2 text-sm text-gray-600">
-        <li><a href="#" class="hover:text-black">About Glowing</a></li>
-        <li><a href="#" class="hover:text-black">Careers</a></li>
-        <li><a href="#" class="hover:text-black">Store Locations</a></li>
-        <li><a href="#" class="hover:text-black">Our Blog</a></li>
-        <li><a href="#" class="hover:text-black">Reviews</a></li>
-      </ul>
+    <hr class="mt-20 pt-8 border-gray-200">
+    
+    <div class="flex flex-col md:flex-row justify-between items-center">
+        <p class="text-sm text-gray-500 order-3 md:order-1 mt-5 md:mt-0">
+            © Glowing 2025 | Powered by Shopify
+        </p>
+        
+        <div class="flex space-x-5 order-2">
+            <i class="fa-brands fa-instagram text-xl"></i>
+            <i class="fa-brands fa-facebook text-xl"></i>
+            <i class="fa-brands fa-youtube text-xl"></i>
+            <i class="fa-brands fa-twitter text-xl"></i>
+        </div>
+        
+        <p class="text-5xl order-1 md:order-3">Glowing</p>
     </div>
-
-    <!-- Information -->
-    <div class="md:w-[25%]">
-      <h3 class="text-lg font-semibold mb-4">Information</h3>
-      <ul class="space-y-2 text-sm text-gray-600">
-        <li><a href="#" class="hover:text-black">Start A Return</a></li>
-        <li><a href="#" class="hover:text-black">Contact Us</a></li>
-        <li><a href="#" class="hover:text-black">Shipping FAQ</a></li>
-        <li><a href="#" class="hover:text-black">Terms & Conditions</a></li>
-        <li><a href="#" class="hover:text-black">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Bottom bar -->
-  <div class="bg-gray-100 border-t border-gray-200 py-4" id="bar">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row md:flex-nowrap items-center justify-between text-sm text-gray-600 px-6 space-y-3 md:space-y-0">
-      <!-- Left -->
-      <p class="whitespace-nowrap">
-        © Glowing 2025 |
-        <a href="#" class="underline hover:text-black">Powered by Shopify</a>
-      </p>
-
-      <!-- Center -->
-      <h1 class="font-serif text-black text-3xl md:text-4xl lg:text-[50px] flex-shrink-0">
-        Glowing
-      </h1>
-
-      <!-- Right -->
-      <div class="flex space-x-4 text-black text-lg flex-shrink-0">
-        <a href="#" class="hover:opacity-70"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="hover:opacity-70"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="hover:opacity-70"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="hover:opacity-70"><i class="fab fa-twitter"></i></a>
-      </div>
-    </div>
-  </div>
+    
+</div>
 </footer>
 <script>
   AOS.init({

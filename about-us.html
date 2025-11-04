@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <!-- tailwind css -->
-     <link rel="stylesheet" href="./src/output.css">
     <!-- font awesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <!-- link tailwind cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+         /* Optional: Custom style for the light green banner background */
+         .banner-bg-lightgreen {
+             background-color: #e6f2da; /* Or a similar light green shade */
+         }
+     </style>
      <!-- AOS CSS -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -21,6 +26,7 @@
         class="border-gray-200 dark:bg-gray-900"
         style="background-color: #e6f2da"
       >
+
         <div
           class=" m-auto flex flex-wrap items-center justify-between lg:pl-20 lg:p-3 lg:py-6"
         >
@@ -37,7 +43,7 @@
               <li>
                 <a
                   href="index.html"
-                  class="block py-2 px-3 text-black underline bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black lg:dark:text-black"
+                  class="block py-2 px-3 text-black bg-blue-700 rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black lg:dark:text-black"
                   aria-current="page"
                   >Home</a
                 >
@@ -66,7 +72,7 @@
               <li>
                 <a
                   href="about-us.html"
-                  class="whitespace-nowrap block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-black  md:dark:hover:text-gray dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="whitespace-nowrap block  underline py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent  md:p-0 dark:text-black  md:dark:hover:text-gray dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >About us </a
                 >
               </li>
@@ -170,8 +176,9 @@
 
       <!-- section 2 -->
        <section
+       style="background-color: #e6f2da;"
         id="section4"
-        class="w-full bg-green-50 mt-20 sm:mt-15 md:mt-20 px-6 md:px-12
+        class="w-full mt-20 sm:mt-15 md:mt-20 px-6 md:px-12
  py-10" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom"
       >
@@ -232,10 +239,10 @@
 
 
       <!-- section 3 -->
-      <section class="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 dark:text-white">
+      <section class="flex flex-col md:flex-row items-center lg:ml-20 justify-between px-6 md:px-12 dark:text-white  lg:pl-20 sm:m-20">
 
         <!-- text -->
-        <div>
+        <div class="m-6 md:m-0" >
           <h2 class="text-3xl md:text-4xl font-semibold mb-6 leading-tight">
             Let's Introduce Skin with The Shine
           </h2>
@@ -257,7 +264,7 @@
         <img src="./img/2nd.png" alt="serum image" 
         class="w-full md:w-[450px] lg:w-[550px] mb-6 md:mb-0 md:mr-8 object-cover" data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="2000">>
+     data-aos-duration="2000">
       </section>
 
       <!-- section 4 -->
@@ -296,61 +303,57 @@
   </div>
       </section>
 
-
-      <!-- section 5 -->
-       <div class="w-full h-[70px] bg-green-50 flex items-center justify-center text-2xl">Contact Us</div>
-
-      <!-- section 6 -->
-      <section class="flex flex-col md:flex-row justify-between px-6 md:px-16 py-12 gap-12 dark:text-white">
-        
-        <!-- Form -->
-        <div class="flex-1">
-          <h2 class="text-3xl font-semibold mb-6 dark:text-white">Send A Message</h2>
-          <form class="flex flex-col space-y-4">
-
-            <!-- Name & Email -->
-            <div class="flex flex-col md:flex-row gap-4 dark:text-black">
-              <input type="text" placeholder="Name" class="w-full md:w-1/2 bg-gray-200 p-3 rounded-md outline-none">
-              <input type="email" placeholder="Email" class="w-full md:w-1/2 bg-gray-200 p-3 rounded-md outline-none">
-            </div>
-
-            <!-- Message -->
-            <textarea placeholder="Message" rows="6" class="w-full bg-gray-200 p-3 rounded-md outline-none dark:text-black"></textarea>
-
-            <!-- Submit Button -->
-            <button type="submit" class="bg-yellow-100 px-6 py-2 rounded-md font-semibold w-fit hover:bg-green-400 transition-colors duration-300 dark:text-black">SUBMIT</button>
-          </form>
-        </div>
-
-        <!-- Info -->
-        <div class="w-full md:w-1/3 space-y-8">
-          <!-- Address -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2">Address</h3>
-            <p>Tuol Kork</p>
-            <p>Street 273, Phnom Penh 12151</p>
+<!-- section5 -->
+      <section class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+        <div class="w-full h-[70px] banner-bg-lightgreen flex items-center justify-center text-xl sm:text-2xl font-semibold border-b border-gray-200 dark:border-gray-700 dark:text-black">
+          Contact Us
+      </div>
+  
+      <section class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-4 sm:px-6 lg:px-8 py-10 md:py-16 gap-8 md:gap-12 lg:gap-20">
+          
+          <div class="flex-1 md:w-1/2 lg:w-3/5">
+              <h2 class="text-2xl sm:text-3xl font-semibold mb-6 dark:text-white">Send A Message</h2>
+              <form class="flex flex-col space-y-4">
+  
+                  <div class="flex flex-col sm:flex-row gap-4">
+                      <input type="text" placeholder="Name" class="w-full sm:w-1/2 lg:w-full bg-gray-200 dark:bg-gray-700 p-3 rounded-md outline-none border border-transparent focus:border-green-500 dark:focus:border-green-400 transition placeholder-gray-500 dark:placeholder-gray-400 text-gray-800 dark:text-gray-100">
+                      <input type="email" placeholder="Email" class="w-full sm:w-1/2 lg:w-full bg-gray-200 dark:bg-gray-700 p-3 rounded-md outline-none border border-transparent focus:border-green-500 dark:focus:border-green-400 transition placeholder-gray-500 dark:placeholder-gray-400 text-gray-800 dark:text-gray-100">
+                  </div>
+  
+                  <textarea placeholder="Message" rows="6" class="w-full bg-gray-200 dark:bg-gray-700 p-3 rounded-md outline-none border border-transparent focus:border-green-500 dark:focus:border-green-400 transition placeholder-gray-500 dark:placeholder-gray-400 text-gray-800 dark:text-gray-100"></textarea>
+  
+                  <button type="submit" class="bg-yellow-200 hover:bg-yellow-300 dark:bg-yellow-600 dark:hover:bg-yellow-700 text-gray-800 dark:text-white px-8 py-3 rounded-md font-semibold w-full sm:w-fit transition-colors duration-300 shadow-md">SUBMIT</button>
+              </form>
           </div>
-
-          <!-- Contact -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2">Contact</h3>
-            <p>Mobile: +855 77 894 545</p>
-            <p>Hotline: 1900 26886</p>
-            <p>E-mail: hello@grace.com</p>
+  
+          <div class="w-full md:w-1/3 lg:w-2/5 space-y-8 p-6 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+              
+              <div>
+                  <h3 class="text-xl sm:text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Address</h3>
+                  <p class="text-gray-700 dark:text-gray-300">3245 Abbot Kinney BLVD -</p>
+                  <p class="text-gray-700 dark:text-gray-300">PH Venice, CA 124</p>
+                  <p class="mt-2 text-gray-700 dark:text-gray-300">76 East Houston Street</p>
+                  <p class="text-gray-700 dark:text-gray-300">New York City</p>
+              </div>
+  
+              <div>
+                  <h3 class="text-xl sm:text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Contact</h3>
+                  <p class="text-gray-700 dark:text-gray-300">Mobile: 068 26589 996</p>
+                  <p class="text-gray-700 dark:text-gray-300">Hotline: 1900 26886</p>
+                  <p class="text-gray-700 dark:text-gray-300">E-mail: <a href="mailto:hello@grace.com" class="text-blue-600 dark:text-blue-400 hover:underline">hello@grace.com</a></p>
+              </div>
+  
+              <div>
+                  <h3 class="text-xl sm:text-2xl font-semibold mb-3 text-gray-900 dark:text-white">Get direction</h3>
+                  <a href="#" class="text-green-600 dark:text-green-400 hover:underline font-medium">View on Map</a>
+              </div>
           </div>
-
-          <!-- Get Direction -->
-          <div>
-            <h3 class="text-2xl font-semibold mb-2">Get direction</h3>
-          </div>
-        </div>
       </section>
-
       
     <!-- footer -->
         
     <footer 
-class="mt-20" 
+class="mt-20 dark:text-black" 
 style="background-color: #fcf8f8"
 >
 <div class="py-16 mx-[75px] sm:px-6 lg:px-8">
@@ -365,7 +368,7 @@ style="background-color: #fcf8f8"
             <p class="mt-7">Give your inbox some love with new products, tips, & more.</p>
             <button
                 type="button"
-                class="flex justify-between mt-8 w-full sm:w-1/2 md:w-1/3 lg:w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+                class="flex justify-between mt-8 w-full sm:w-1/2 md:w-1/3 lg:w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-gray-300 dark:hover:bg-gray-700 dark:focus:ring-purple-900"
             >
                 Enter your email address <i class="fa-solid fa-arrow-right"></i>
             </button>

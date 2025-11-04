@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="dark:bg-gray-800">
     <!-- header -->
     <header>
       <nav
@@ -44,28 +44,28 @@
               <li>
                 <a
                   href="shop.html"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Shop</a
                 >
               </li>
               <li>
                 <a
                   href="collection.html"
-                  class="block py-2 px-3 underline text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="block py-2 px-3 underline text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Collections</a
                 >
               </li>
               <li>
                 <a
-                  href="blog"
-                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  href="blog.html"
+                  class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >Blog</a
                 >
               </li>
               <li>
                 <a
                   href="about-us.html"
-                  class="whitespace-nowrap block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                  class="whitespace-nowrap block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                   >About us</a
                 >
               </li>
@@ -104,7 +104,9 @@
           <div
             class="flex items-center justify-between p-4 border-b border-gray-300"
           >
-            <h2 class="text-4xl text-gray-800">Glowing</h2>
+            <h2 class="text-4xl text-gray-800" style="font-size: 40px">
+              Glowing
+            </h2>
             <button
               id="closeSidebar"
               class="text-2xl text-gray-700 hover:text-gray-900"
@@ -116,21 +118,31 @@
           <!-- Sidebar Links -->
           <ul class="p-6 space-y-6">
             <li>
-              <a href="index.html" class="text-lg font-medium text-gray-800">Home</a>
+              <a href="index.html" class="text-lg font-medium text-gray-800"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="shop.html" class="text-lg font-medium text-gray-800">Shop</a>
+              <a href="shop.html" class="text-lg font-medium text-gray-800"
+                >Shop</a
+              >
             </li>
             <li>
-              <a href="collection.html" class="text-lg font-medium text-gray-800"
+              <a
+                href="collection.html"
+                class="text-lg font-medium text-gray-800"
                 >Collections</a
               >
             </li>
             <li>
-              <a href="blog.html" class="text-lg font-medium text-gray-800">Blog</a>
+              <a href="blog.html" class="text-lg font-medium text-gray-800"
+                >Blog</a
+              >
             </li>
             <li>
-              <a href="about-us.html" class="text-lg font-medium text-gray-800">About Us</a>
+              <a href="about-us.html" class="text-lg font-medium text-gray-800"
+                >About Us</a
+              >
             </li>
           </ul>
         </div>
@@ -147,9 +159,9 @@
       <!-- top -->
       <div class="text-center mt-10 bg-gray-300 p-5">
         <a href="" class="text-[16px] text-gray-500">Home -</a>
-        <a href="" class="text-[16px]">Collection</a>
+        <a href="" class="text-[16px] dark:text-white">Collection</a>
       </div>
-      <h2 class="text-center text-[30px] mt-10">Collection</h2>
+      <h2 class="text-center text-[30px] mt-10 dark:text-white">Collection</h2>
 
       <!-- card -->
       <section class="flex justify-center m-10">
@@ -164,7 +176,7 @@
               alt=""
               class="w-[300px] h-[350px]"
             />
-            <div class="text-center pt-3">
+            <div class="text-center pt-3 dark:text-white">
               <h3 class="text-[20px] font-semibold">New Arrival</h3>
               <p class="text-gray-500">6 iteams</p>
             </div>
@@ -172,7 +184,7 @@
 
           <div>
             <img src="./img/on sale.webp" alt="" class="w-[300px] h-[350px]" />
-            <div class="text-center pt-3">
+            <div class="text-center pt-3 dark:text-white">
               <h3 class="text-[20px] font-semibold">On Sale</h3>
               <p class="text-gray-500">9 iteams</p>
             </div>
@@ -180,7 +192,7 @@
 
           <div>
             <img src="./img/serums.webp" alt="" class="w-[300px] h-[350px]" />
-            <div class="text-center pt-3">
+            <div class="text-center pt-3 dark:text-white">
               <h3 class="text-[20px] font-semibold">Serums</h3>
               <p class="text-gray-500">4 iteams</p>
             </div>
@@ -188,7 +200,7 @@
 
           <div>
             <img src="./img/Shampoo.webp" alt="" class="w-[300px] h-[350px]" />
-            <div class="text-center pt-3">
+            <div class="text-center pt-3 dark:text-white">
               <h3 class="text-[20px] font-semibold">Shampoo</h3>
               <p class="text-gray-500">4 iteams</p>
             </div>
@@ -202,7 +214,9 @@
               class="w-[300px] h-[350px]"
             />
             <div class="text-center pt-3">
-              <h3 class="text-[20px] font-semibold">Treatment</h3>
+              <h3 class="text-[20px] font-semibold dark:text-white">
+                Treatment
+              </h3>
               <p class="text-gray-500">5 iteams</p>
             </div>
           </div>
@@ -210,7 +224,9 @@
           <div>
             <img src="./img/Under 2t.webp" alt="" class="w-[300px] h-[350px]" />
             <div class="text-center pt-3">
-              <h3 class="text-[20px] font-semibold">Under $25</h3>
+              <h3 class="text-[20px] font-semibold dark:text-white">
+                Under $25
+              </h3>
               <p class="text-gray-500">6 iteams</p>
             </div>
           </div>
@@ -222,16 +238,20 @@
         <div class="grid grid-cols-3 gap-5 text-center">
           <a
             href="./collection.html"
-            class="text-[16px] hover:hover:bg-yellow-200 hover:rounded-[50%]"
+            class="text-[16px] hover:hover:bg-yellow-200 hover:rounded-[50%] dark:text-white"
           >
             <<
           </a>
           <a
             href="./collection.html"
-            class="text-[16px] hover:hover:bg-yellow-200 px-2 rounded-[50%]"
+            class="text-[16px] hover:hover:bg-yellow-200 px-2 rounded-[50%] dark:text-white"
             >1</a
           >
-          <a href="" class="text-[16px] bg-yellow-200 px-2 rounded-[50%]">2</a>
+          <a
+            href=""
+            class="text-[16px] bg-yellow-200 px-2 rounded-[50%] dark:text-white"
+            >2</a
+          >
         </div>
       </section>
     </main>
@@ -249,7 +269,7 @@
             </p>
             <button
               type="button"
-              class="flex justify-between mt-8 w-full sm:w-1/2 md:w-1/3 lg:w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+              class="flex justify-between mt-8 w-full sm:w-1/2 md:w-1/3 lg:w-full focus:outline-none text-gray-400 bg-gray-100 hover:bg-gray-800 hover:text-white focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm text-left px-5 py-2.5 mb-2 dark:bg-gray-300 dark:hover:bg-gray-700 dark:focus:ring-purple-900"
             >
               Enter your email address <i class="fa-solid fa-arrow-right"></i>
             </button>
